@@ -1,0 +1,26 @@
+.absolute-text {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    opacity: 0;
+    color: #fff;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.449);
+    transition: opacity 0.5s; /* Add transition to smooth opacity changes */
+}
+
+.imgsideee {
+    cursor: pointer;
+    transition: top 0.5s;
+    position: relative; /* Add position relative for proper sibling selector usage */
+}
+
+.imgsideee:hover + .absolute-text,
+.absolute-text:hover {
+    opacity: 1;
+}

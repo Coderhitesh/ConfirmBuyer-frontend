@@ -1,0 +1,348 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+ *  STYLE 3
+ */
+ html,body{
+  overflow-x: hidden!important;
+
+ }
+
+ ::-webkit-scrollbar-track
+ {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   background-color: #F5F5F5;
+ }
+ 
+ ::-webkit-scrollbar
+ {
+   width: 6px;
+   background-color: #F5F5F5;
+ }
+ 
+ ::-webkit-scrollbar-thumb
+ {
+   background-color: #000000;
+ }
+
+
+
+.heightS {
+ height: 80vh;
+}
+.nb{
+  display: none;
+}
+.glass {
+  /* From https://css.glass */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.imgprop{
+  max-width: 250px;
+  width: 100%;
+  max-height: 150px;
+  height: 100%;
+}
+.grids{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4,1fr);
+}
+.gridss{
+  display: -ms-grid;
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+}
+.border-green-500 {
+  --tw-border-opacity: 1;
+  border-color: #910A67;
+}
+.sliderss {
+  max-width: 400px;
+}
+.Four-cards-container{
+  /* border: 2px solid green; */
+
+  /* padding: 2rem; */
+  margin: 12px auto;
+}
+.cards-four{
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  cursor: pointer;
+  height: 200px;
+}
+.hunder{
+  height: 90vh;
+}
+.divs-input{
+  position: relative;
+
+  /* border: 2px solid green; */
+}
+#basic-menu{
+  position: absolute;
+  top: -200px;
+  left: -112px;
+}
+.logo{
+  width: 200px;
+}
+.ab {
+  position: absolute;
+  /* border: 4px solid red; */
+  z-index: 999;
+  height: 41%;
+  right: 67px;
+}
+.smallcaps{
+  font-variant-caps:small-caps;
+}
+.ab ion-icon{
+  position: relative;
+  z-index: 899;
+  cursor: pointer;
+  padding: 0 7px;
+  /* padding: 1.2rem; */
+  height: 100%;
+background-color: #6e1ed6;
+  color: rgb(255, 255, 255)!important;
+}
+@media screen and (max-width: 768px) {
+  .gridss{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #basic-menu{
+    position: absolute;
+    top: -70px;
+    left: -112px;
+  }
+  .divs-input{
+    width: 200px;
+  }
+  .nb{
+    display: block;
+  }
+  .imgnot{
+    width: 100%;
+  }
+  .coll{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgThirty{
+    width: 60%!important;
+  }
+  .selct{width: 12px;}
+  .hiddenTop {
+    display: none;
+  }
+  .hunder{
+    height: none;
+  }
+  .heightS {
+    height: 100%!important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .whunderd {
+    width: 100%;
+  }
+  .glass {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .padding {
+    padding: 0.5rem;
+  }
+  .font-bolders {
+    font-weight: 700!important;
+  }
+  .cards-four {
+  
+    width: 100%;
+    height: 200px;
+}
+.Four-cards-container{
+  padding: 0.7rem;
+}
+.trending__cards-container {
+ 
+  backdrop-filter: none!important;
+  -webkit-backdrop-filter:none;
+ 
+}
+.colum{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.noheight{
+height: auto;
+}
+.wfulls{
+  width: 100%;
+}
+.grids{
+  /* border: 2px solid; */
+ margin: 0 auto;
+width: 100%;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2,1fr);
+}
+.borders{
+  border: 1px solid black;
+}
+.imgprop {
+  aspect-ratio: 1/2;
+}
+.glass2{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+-webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px); */
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.confirm-post-seciton .container .confirm-title p {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 893px) {
+  .heightS {
+    min-height: 88vh!important;
+  }
+}
+@media screen and (max-width: 493px) {
+
+  .gridss{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grids{
+    /* border: 2px solid; */
+   margin: 0 auto;
+width: 100%;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1,1fr);
+  }
+  .anchorHeight{
+    display: block !important;
+    min-height: 200px;
+    /* border: 2px solid!important; */
+  }
+  .borders{
+    border: 1px solid black;
+  }
+  #basic-menu{
+    position: absolute;
+    top: -100px;
+    left: -112px;
+  }
+}
+
+
+
+@media screen and (max-width:318px) {
+  .divs-input{
+    width: 150px;
+  }
+  .normargin{
+    margin: 0;
+  }
+}
+
+/* styles.css */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+
+@media screen and  (max-width:1192px) {
+  .top-header-section ul {
+    width: 100%;
+    line-height: 1.3;
+}
+}
+.noPadding{
+  padding: 0rem!important;
+}
+@media screen and  (max-width:1398px) {
+  .top-header-section ul {
+    width: 100%;
+    line-height: 2.3!important;
+}
+.heightS {
+  height: 86vh;
+}
+}
+
+.vertical-nav{
+  position: fixed;
+  z-index: 999;
+  height: 100vh;
+  top: 0pc;
+  width: 20%;
+}
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}

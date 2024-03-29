@@ -1,0 +1,221 @@
+ 
+
+.buyers-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: aliceblue;
+
+}
+.companyName{
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+}
+.companyName::after{
+position: absolute;
+content: '';
+left: -1px;
+overflow: hidden;
+
+-webkit-filter: blur(2px);
+
+        filter: blur(2px);
+width: 100%;
+height: 100%;
+background-color: #7324cd;
+}
+.blur {
+    /* color: #000000; */
+    /* filter: blur(2px); */
+ 
+}
+.main-div-container{
+    padding: 1.2rem;
+}
+.buyerstabs{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 2.1rem;
+}
+.buyertab{
+    width: 100%;
+    justify-content: flex-start;
+}
+.tab_List{
+    gap: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.tab_List li{
+    padding: 1.1rem 3rem;
+    border-top-right-radius: 25px;
+    background-color: grey;
+    color: #fff;
+    cursor: pointer;
+}
+.tab_List li.active{
+    background-color: rgb(97, 64, 228);
+}
+
+
+.buyers-tables{
+    width: 100%;
+    height: 100%;
+}
+
+.buyers-card{
+    padding: 5px;
+}
+.cards-buyers{
+    padding: 1.2rem 2rem;
+    width: 100%;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+-webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-and-quote-btn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.info-side{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3.2rem;
+}
+.diva-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    padding: 5px;
+    /* border: 2px solid; */
+    /* align-items: center; */
+
+    gap: 1.2rem;
+    /* justify-content: center; */
+}
+
+
+
+.diva-flex ion-icon{
+    margin-top: 7px;
+    color: blueviolet;
+    font-size: 1.6rem;
+}
+.diva-flex h3{
+    font-size: 22px;
+}
+
+.quote-btn{
+    position: relative;
+    margin-left: 25px;
+    width: 25%;
+}
+
+.quote-btn::before{
+    position: absolute;
+    content: '';
+    top: -40px;
+    width: 100%;
+    height:100px;
+    cursor: pointer;
+
+    left: -10px;
+    border-left: 2px solid rgb(91, 43, 159);
+}
+.quote-btn button{
+    background-color: #3fc5c5;
+    padding: 0.6rem 2rem;
+    color: #fff;
+    border-top-left-radius: 40px;
+    cursor: pointer;
+}
+
+.quote-bt button{
+    background-color: #3fc5c5;
+    padding: 0.6rem 2rem;
+    color: #fff;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+.btn-login{
+    background-color: #7553ff;
+    padding: 0.6rem 2rem;
+    color: #fff;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .diva-flex {
+        width: 100%;
+      
+    }
+    .info-side {
+     
+        -webkit-box-orient: vertical;
+     
+        -webkit-box-direction: normal;
+     
+            -ms-flex-direction: column;
+     
+                flex-direction: column;
+    
+    }
+    .info-and-quote-btn {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .quote-btn {
+        position: relative;
+        margin-left: 25px;
+        width: 100%;
+    }
+    .quote-btn::before{
+        display: none;
+    }
+
+    .tab_List li {
+        padding: 1.1rem 2rem;
+        border-top-right-radius: 25px;
+        background-color: grey;
+        color: #fff;
+        margin-left: -61px;
+    }
+    
+}

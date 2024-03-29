@@ -1,0 +1,52 @@
+.slides-flag {
+    max-width: 1650px;
+    /* border: 1px solid black; */
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-bottom: 22px;
+    align-items: center;
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    min-height: 30vh;
+  }
+  
+  .slides-flags {
+    display: flex;
+    padding: 1.2rem !important;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .slides-flags img {
+    /* border-radius: 50%; */
+    width: 100px;
+    object-fit: cover;
+    /* border: 2px solid; */
+    aspect-ratio: 6/4;
+    height: 100px!important;
+  }
+  .city {
+    font-size: 3rem;
+    color: #1c0a22e5;
+    margin-left: 64px;
+  }
+  
+
+
+  @media screen and (max-width:768px) {
+    .slides-flags img {
+      /* border-radius: 50%; */
+      width: 100px;
+      object-fit: cover;
+      /* border: 2px solid; */
+      aspect-ratio:4/4!important;
+      height: 100px!important;
+    }
+  }

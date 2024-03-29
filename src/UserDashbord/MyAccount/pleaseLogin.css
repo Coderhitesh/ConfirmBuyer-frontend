@@ -1,0 +1,39 @@
+
+.pleaselogin-main{
+    /* height: 100vh; */
+}
+
+.user-dashbord .pleaselogin-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.user-dashbord .pleaselogin-detail .please-login-bg{
+    width: 47%;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-dashbord .pleaselogin-detail .please-login-bg img{
+    width: 100%;
+    height: 100%;
+}
+
+.user-dashbord .pleaselogin-detail .pleaselogin-btn{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+

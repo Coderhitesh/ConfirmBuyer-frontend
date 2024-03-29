@@ -1,0 +1,71 @@
+.add-product-section .container{
+    /* max-width: 1920px;
+    margin: 0 auto; */
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.add-product-section .container .heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-product-section .container .heading span{
+    font-size: 40px;
+    font-weight: 700;
+    font-variant: small-caps;
+    position: relative;
+}
+
+.add-product-section .container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.add-product-section .container form{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.add-product-section .container form .input-box{
+    width: 100%;
+}
+
+.add-product-section .container form input{
+    width: 100%;
+}
+
+.btn-grad {
+    width: 100%;
+    background-color: #910A67;
+    /* margin: 10px; */
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }

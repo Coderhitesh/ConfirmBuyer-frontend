@@ -1,0 +1,78 @@
+
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb 
+{
+  /* background-color: #000000; */
+  background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(214, 122, 217)),
+									   color-stop(0.72, rgb(189, 73, 189)),
+									   color-stop(0.86, rgb(148, 28, 134)));
+}
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  transition: transform 0.5s ease; /* Add sliding animation */
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden; /* Hide overflow to create the sliding effect */
+}
+
+.slider-image {
+  width: 100%;
+height: 100%;
+  /* border: 1px solid #ddd; Add a border for aesthetics */
+  transition: transform 0.5s ease; /* Add sliding animation */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #007bff; /* Customize the button styles */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider-button:hover {
+  background-color: #0056b3; /* Change color on hover */
+}
+
+/* Additional styles for the sliding animation */
+.slider-image-prev {
+  transform: translateX(-100%);
+}
+
+.slider-image-next {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 768px) {
+  .slider-image {
+    width: 100%;
+    height: 50vh;
+  }
+  .slider-container{
+    height: 50vh;
+  }
+}

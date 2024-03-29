@@ -1,0 +1,54 @@
+.joinfull-main{
+    width: 100%;
+}
+
+.joinfull-main .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 30px 35px;
+}
+
+.joinfull-main .container .joinfull-main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.joinfull-main .container .joinfull-main-box .joinfull-bg{
+    height: 100%;
+    object-fit: cover;
+    width: 48%;
+}
+
+.joinfull-main .container .joinfull-main-box form{
+    width: 48%;
+    height: 100%;
+}
+
+@media screen and (max-width:1045px) {
+  
+    
+    .joinfull-main .container .joinfull-main-box .joinfull-bg{
+        width: 100%;
+    }
+    
+    .joinfull-main .container .joinfull-main-box form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .joinfull-main .container .joinfull-main-box{
+        flex-direction: column;
+    }
+    
+    .joinfull-main .container .joinfull-main-box .joinfull-bg{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .joinfull-main .container .joinfull-main-box form{
+        width: 100%;
+    }
+}

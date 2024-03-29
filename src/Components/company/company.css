@@ -1,0 +1,292 @@
+.website-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+    gap: 1rem;
+    margin-top: 30px;
+    position: relative;
+}
+
+.company-filter{
+    padding-top: 10px;
+}
+
+.website-container .company-left-section {
+    width: 30%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    padding: 10px 15px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.website-container .company-left-section h3{
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+    font-variant: small-caps;
+
+}
+
+.website-container .company-left-section h3 span{
+    color: red;
+}
+
+.website-container .company-right-section {
+    width: 65%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.website-container .company-right-section .company-col {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-container .company-right-section .company-col .company-image{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.website-container .company-right-section .company-col .company-image img{
+    width: 120px;
+    height: 140px;
+}
+
+
+
+.website-container .company-right-section .company-col .company-all-detail{
+    width: 80%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+.website-container .company-right-section .company-col .company-all-detail h3{
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 0rem !important;
+    /* line-height: 0; */
+    width: 70%;
+}
+
+.website-container .company-right-section .company-col .company-all-detail h3 span{
+    font-size: 1.7rem;
+    font-variant: small-caps;
+    color: rgb(122, 119, 119);
+}
+
+.website-container .company-right-section .company-col .company-all-detail p{
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 0rem;
+}
+
+.website-container .company-right-section .company-col .company-all-detail p span{
+    font-size: 1.7rem;
+    font-variant: small-caps;
+    color: rgb(122, 119, 119);
+}
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+.company-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 130px;
+    height: 55px;
+
+    position: absolute;
+    right: 4%;
+    top: 10%;
+}
+
+.company-tag p{
+    font-size: 1.2rem !important;
+    text-align: center;
+    padding: 17px 5px !important;
+    /* margin-bottom: 0rem; */
+    color: white !important;
+}
+
+@media (max-width:1200px) {
+
+    .website-container .company-left-section {
+        display: none;
+    }
+
+    .website-container .company-right-section {
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .website-container .company-right-section .company-col .company-image{
+        width: 50%;
+    }
+
+    .website-container .company-right-section .company-col .company-all-detail h3{
+        
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:920px) {
+    
+    .website-container .company-right-section .company-col {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .website-container .company-right-section .company-col .company-image{
+        width: 50%;
+        display: flex;
+        
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width:517px) {
+    .company-tag{
+        width: 100px;
+        height: 40px;
+    }
+    
+    .company-tag p{
+        font-size: 1.7rem;
+        margin-bottom: 0rem;
+        color: white !important;
+    }
+}
+
+@media (max-width:383px) {
+    .website-container .company-right-section .company-col .company-all-detail h3{
+        font-size: 1.3rem;
+    }
+    
+    .website-container .company-right-section .company-col .company-all-detail h3 span{
+        font-size: 1.3rem;
+    }
+    
+    .website-container .company-right-section .company-col .company-all-detail p{
+        font-size: 1.3rem;
+    }
+    
+    .website-container .company-right-section .company-col .company-all-detail p span{
+        font-size: 1.3rem;
+    }
+
+    .website-container .company-right-section .company-col .company-image img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-grad {
+        background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+        margin: 10px;
+        padding: 10px 35px;
+      }
+}
+
+
+
+
+
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    padding-bottom: 20px;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: rgb(213, 17, 122);
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+  
+    /* &:hover {
+      background-color: var(--greyLight);
+    } */
+  }
+  
+  .pagination button.active {
+    background-color: var(--greyLight-2);
+    color: var(--greyDark);
+  }
+  

@@ -1,0 +1,258 @@
+.main-single {
+  width: 100%;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* background-color: aliceblue; */
+}
+.single-conatiner {
+  max-width: 1650px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.product-conatiner-detail {
+  /* border: 2px solid; */
+  margin: 0 auto;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 20px;
+  max-width: 100%;
+}
+.img-box-single {
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+}
+.img-box-single img {
+  max-width: 100%;
+  object-fit: contain;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  aspect-ratio: 3/2;
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+/* .Product-desciption-side{
+ 
+} */
+.heading-single {
+  padding: 1.2rem;
+}
+.heading-single span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+.other-product-details {
+  padding: 1.2rem;
+}
+.other-product-details p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-variant: small-caps;
+}
+.other-product-details p span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-left: 8px;
+  font-variant: none !important;
+}
+.EnquiryBtn {
+  padding: 0 0 0 1.2rem;
+}
+
+.about-product-user {
+  max-width: 100%;
+  padding: 1.2rem;
+}
+.under-conatiner {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  gap: 15px 25px;
+}
+.Product-Desc-Card {
+  text-align: left;
+  padding: 2rem;
+  height: 400px;
+  display: flex;
+  gap: 10px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #f1e9e9, -20px -20px 60px #ffffff;
+  /* border: 2px solid black; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-img {
+  display: flex;
+  gap: 10px;
+  border-radius: 50%;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+.icon-img img {
+  display: flex;
+  border-radius: 50%;
+  /* border: 6px solid; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.desc-text {
+  padding: 12px 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.headp {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-variant: small-caps;
+}
+
+/* ==========================Product-Specs */
+
+.Product-Specs {
+  text-align: left;
+  padding: 2rem;
+  text-transform: capitalize;
+  height: 400px;
+  gap: 7px;
+  display: flex;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #f1e9e9, -20px -20px 60px #ffffff;
+  /* border: 2px solid black; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-specs-list {
+}
+td,
+tr,
+th {
+  padding: 0.4rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.user-card {
+  text-align: left;
+  padding: 2rem;
+  text-transform: capitalize;
+  height: 400px;
+  gap: 7px;
+  display: flex;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #f1e9e9, -20px -20px 60px #ffffff;
+  /* border: 2px solid black; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.user-list{
+  display: flex;
+  gap: 0.7rem;
+  padding-left: 12px;
+
+  border: 1px solid ;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  height: 100%;
+}
+.user-list p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width:1317px) {
+  .under-conatiner {
+  
+    grid-template-columns: repeat(2, 1fr);
+
+}
+}
+@media screen and (max-width:837px) {
+  .under-conatiner {
+  
+    grid-template-columns: repeat(1, 1fr);
+
+}
+}
+
+@media screen and (max-width:730px) {
+  .product-conatiner-detail {
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+}
+.about-product-user {
+margin-top: 22px;
+}
+.single-conatiner {
+ 
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+}
+}
+@media screen and (max-width:502px) {
+  .img-box-single {
+ 
+    height: auto;
+  }
+  .Product-Desc-Card,.user-card,.Product-Specs{
+    height: auto;
+  }
+}
+
+
